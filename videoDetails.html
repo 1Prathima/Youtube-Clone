@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="icon" href="https://www.youtube.com/s/desktop/fc8159e8/img/favicon_32x32.png">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/video.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <div class="icon">
+                <img src="assets/images/hamburgerIcon.png" alt="">
+                <!-- <i class="fa-solid fa-bars" style="color: #ffffff;"></i> -->
+            </div>
+            <div class="logo">
+                <img src="assets/images/Logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="input">
+                <input id="search-input" value="" type="search" placeholder="Search">
+                <button id="search-button">
+                    <img src="assets/images/SearchBox-Button.png" alt="">
+                </button>
+            </div>
+            <div class="icon">
+                <img src="assets/images/micIcon.png" alt="">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="icon">
+                <img src="assets/images/icon1.png" alt="">
+            </div>
+            <div class="icon">
+                <img src="assets/images/icon2.png" alt="">
+            </div>
+            <div class="icon">
+                <img src="assets/images/icon3.png" alt="">
+            </div>
+            <div class="icon">
+                <img src="assets/images/User-Avatar-main.png" alt="">
+            </div>
+        </div>
+    </nav>
+    
+    <section class="main-container">
+        <section class="video">
+            <div id="current-video">
+            <!-- <div class="yt-video">
+                <div class="video-image">
+                    <iframe src=""></iframe>
+                </div>
+                <div class="video-details">
+                    <div class="title"><p>Blind Woodturner: Turning passion into fine art</p></div>
+                    <div class="details">
+                        <div class="viewsAndDate">
+                            <p>576,969 views . Oct 8, 2021</p>
+                        </div>
+                        <div class="buttons">
+                            <div class="item">
+                                <img src="assets/images/LikedBig.png" alt="">
+                                <p>1.7K</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/DisLikedBig.png" alt="">
+                                <p>1.2K</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/Share.png" alt="">
+                                <p>SHARE</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/Save.png" alt="">
+                                <p>SAVE</p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/More.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <hr>
+                <div class="channel">
+                    <div class="part-1">
+                        <div class="channel-details">
+                            <img src="assets/images/Channel-img.png" alt="">
+                            <div class="details">
+                                <p>Marcus Levin</p>
+                                <p>1.2M subscribers</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="button">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                    <div class="part-2">
+                        <p>Chris Fisher, also known as the Blind Woodturner, learned his craft by listening to hundreds of hours of YouTube videos and experimenting in his workshop. Now he’s a YouTube creator himself, sells his products worldwide, and does demonstrations all around the country.</p>
+                    </div>
+                </div>
+                <hr>     
+            </div> -->
+            </div>
+            <div class="your-comment">
+                <div class="part-1">
+                    <p id="comments-count">286 Comments</p>
+                    <div class="item">
+                        <img src="assets/images/Dropdown.png" alt="">
+                        <p>SORT BY</p>
+                    </div>
+                </div>
+                <div class="part-2">
+                    <img src="assets/images/User-Avatar1.png" alt="">
+                    <input placeholder="Add a public comment"></input>
+                </div>
+
+            </div>
+            <div id="public-comments" class="public-comments">
+                <!-- <div class="comment">
+                    <div class="account-img">
+                        <img src="assets/images/User-Avatar7.png" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="name">James Gouse </div>
+                        <div class="text">Wow, world is full of different skills </div>
+                        <div class="buttons">
+                            <img src="assets/images/LikedBig.png" alt="">
+                            <img src="assets/images/DisLikedBig.png" alt="">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    
+        <section id="suggestions-container" class="suggestions-container">
+            <!-- <div class="nav">
+                <p>All</p>
+                <p id="playing-channel-name"></p>
+            </div> -->
+            <!-- <div class="suggested-video">
+                <div class="video-image">
+                    <img src="assets/images/b7.jpg" alt="video image">
+                    <div class="duration">23.52</div>
+                </div>
+                <div class="description">
+                    <p class="title">Lorem ipsum dolor sit amet, consecte 
+                        adipiscing elit.</p>
+                    <p class="channel-name">James Gouse</p>
+                    <div class="viewsAndTime">
+                        <p class="views">15K views .</p>
+                        <p class="time"> 5 days ago</p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </section>
+    
+    <script src="scripts/openVideo.js"></script>
+</body>
+</html>

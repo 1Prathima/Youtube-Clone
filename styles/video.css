@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Pacifico&family=Ruda:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+.main-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 40px;
+    padding: 90px;
+    background-color: black;
+}
+
+.video{
+    padding-bottom: 25px;
+    width: 50vw;
+}
+
+.yt-video{
+    width: 640px;
+    /* height: 455px; */
+}
+
+.video-image{
+    width: 640px;
+    height: 360px;
+}
+
+.video-image iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.video-details{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    height: 94px;
+    padding: 20px 0;
+}
+
+.video-details .title{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.video-details .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+} 
+
+.video-details .details p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.channel .part-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channel-details{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.channel-details img{
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+}
+.channel{
+    padding: 20px 0;
+}
+
+.channel p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.channel .part-1 .button button{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #CC0000;
+    color: white;
+    padding: 10px 16px;
+}
+
+hr{
+    color: white;
+    width: 100%;
+}
+
+.channel .part-2{
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+.your-comment{
+    padding: 20px 0;
+}
+.your-comment .part-1{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.your-comment .part-2{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.your-comment .part-2 img,.public-comments .account-img img {
+    width: 40px;
+    height: 40px;
+}
+
+.your-comment .part-2 p{
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.your-comment .part-2 input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+    width: 100%;
+    background-color: black;
+}
+
+.public-comments .comment{
+    display: flex;
+    column-gap: 16px;
+    padding: 15px 0;
+}
+
+.public-comments .comment .account-img img{
+    border-radius: 25px;
+}
+
+.public-comments .comment .details .name{
+    font-weight: 700; 
+}
+
+.public-comments .buttons img{
+    width: 20px;
+    height: 20px;
+}
+
+#suggestions-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.nav{
+    display: flex;
+}
+
+.nav p{
+    border-radius: 8px;
+    background-color: #212121;
+    padding: 6px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.suggested-video{
+    display: flex;
+    column-gap: 10px;
+}
+
+.suggested-video .video-image{
+    width: 176px;
+    height: 94px;
+    border: 1px solid white;
+    position: relative;
+    border-radius: 8px;
+}
+.suggested-video .video-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.suggested-video .video-image .duration{
+    position: absolute;
+    font-size: 10px;
+    font-weight: 400;
+    right: 6px;
+    bottom: 4px;
+    border-radius: 3px;
+    padding: 1px 2px;
+}
+
+.suggested-video .description{
+    width: 226px;
+    height: 94px;
+}
+
+.suggested-video .description .title{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 4px 0;
+}
+
+.suggested-video .description .channel-name{
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 2px;
+    color: #AAAAAA;
+}
+
+.suggested-video .description .viewsAndTime{
+    display: flex;
+    font-size: 13px;
+    color: #AAAAAA;
+}
