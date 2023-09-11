@@ -8,8 +8,6 @@ const commentsCount = document.getElementById("comments-count");
 
 const playingChannelName = document.getElementById("playing-channel-name");
 
-// currentVideo.src = `https://www.youtube.com/embed/${videoId}`;
-
 
 // getting a single video details using videoId 
 async function getVideoDetails1(){
@@ -25,12 +23,13 @@ async function getVideoDetails1(){
     // console.log(data.items);
 }
 
+//play the current video
 function renderVideo(video){
     currentVideo.innerHTML= ``;
     currentVideo.innerHTML = `
     <div class="yt-video">
                 <div class="video-image">
-                    <iframe src="https://www.youtube.com/embed/${videoId}"></iframe>
+                    <iframe src="https://www.youtube.com/embed/${videoId}" allowfullscreen></iframe>
                 </div>
                 <div class="video-details">
                     <div class="title"><p>${video.snippet.localized.title}</p></div>
@@ -91,7 +90,7 @@ function renderVideo(video){
             </div>`;
 }
 
-
+//get the comments of video
 async function loadComments(){
     const url = `${BASE_URL_1}/commentThreads?key=${API_KEY_1}&part=snippet&videoId=${videoId}&maxResults=80&order=time`;
     const response = await fetch(url);
@@ -101,6 +100,7 @@ async function loadComments(){
     renderComments(comments);
 }
 
+//render the comments
 function renderComments(comments){
     publicComments.innerHTML = '';
     comments.forEach((comment) => {
@@ -161,11 +161,11 @@ async function getVideoData(videos){
         videoDataList.push(await getVideoDetails(videoId));
     }
     console.log(videoDataList);
-    renderVideos(videoDataList);
+    renderSuggestionVideos(videoDataList);
 }
 
-
-function renderVideos(videos){
+//render suggested videos
+function renderSuggestionVideos(videos){
     for(let i=0;i<videos.length;i++){
         if(videos[i] == undefined) continue;
         const video = videos[i];
