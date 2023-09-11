@@ -167,6 +167,7 @@ async function getVideoData(videos){
 
 function renderVideos(videos){
     for(let i=0;i<videos.length;i++){
+        if(videos[i] == undefined) continue;
         const video = videos[i];
         const thumbnailUrl = video.snippet.thumbnails.medium.url;
         // const duration = video.contentDetails.duration;

@@ -191,6 +191,7 @@ hr{
 .suggested-video{
     display: flex;
     column-gap: 10px;
+    cursor: pointer;
 }
 
 .suggested-video .video-image{

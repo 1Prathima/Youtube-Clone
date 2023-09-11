@@ -37,6 +37,7 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 }
 .menu-item p{
     font-size: 14px;
