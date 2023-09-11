@@ -1,6 +1,8 @@
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
-// const API_KEY = "AIzaSyCX9hUGvoRTlZ0AiBPaNb7l5ZoBDZfFLpE";
-const API_KEY = "AIzaSyA6H2qKKWqHgEltuym61HAMLU-6R9gAuu8";
+// const API_KEY = "AIzaSyAheaVrdYahSSvwgwSlQbTg6wKvS_wpgsU";
+// const API_KEY = "AIzaSyBChNXVQQitelesdME3RL7X3fLWuKBISgg";
+// const API_KEY = "AIzaSyA6H2qKKWqHgEltuym61HAMLU-6R9gAuu8";
+const API_KEY = "AIzaSyCX9hUGvoRTlZ0AiBPaNb7l5ZoBDZfFLpE";
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 

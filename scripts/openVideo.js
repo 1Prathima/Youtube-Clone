@@ -1,5 +1,5 @@
 const BASE_URL_1 = "https://www.googleapis.com/youtube/v3";
-const API_KEY_1 = "AIzaSyA6H2qKKWqHgEltuym61HAMLU-6R9gAuu8";
+const API_KEY_1 = "AIzaSyCX9hUGvoRTlZ0AiBPaNb7l5ZoBDZfFLpE";
 
 const currentVideo = document.getElementById("current-video");
 const videoId = localStorage.getItem("videoId");

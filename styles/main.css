@@ -17,7 +17,6 @@ main{
 
 .video-details{
     width: 276px;
-    cursor: pointer;
 }
 
 .video-image{
@@ -25,6 +24,8 @@ main{
     height: 155px;
     border: 1px solid black;
     position: relative;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .video-image img{
@@ -34,9 +35,9 @@ main{
     border-radius: 10px;
 }
 
-.video-image img:hover {
+.video-image:hover, .video-image img:hover {
     border-radius: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .duration{
@@ -54,6 +55,7 @@ main{
 .video-description{
     display: flex;
     width: 260px;
+    cursor: pointer;
 }
 .channel-image{
     width: 48px;
