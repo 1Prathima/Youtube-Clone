@@ -15,6 +15,10 @@ main{
     color: white;
 }
 
+#videos-container .loading{
+    height: 100vh;
+}
+
 .video-details{
     width: 276px;
 }
@@ -37,7 +41,7 @@ main{
 
 .video-image:hover, .video-image img:hover {
     border-radius: 0;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .duration{
