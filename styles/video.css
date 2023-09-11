@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 .main-container{
     display: flex;
